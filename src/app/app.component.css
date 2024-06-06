@@ -1,0 +1,129 @@
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background: url('C:/Users/meesa/OneDrive/programming/AngularJs/Assignment/src/bg.jpg') no-repeat center/cover fixed;
+    overflow: hidden;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    height: 50vh;
+    width: 40vw;
+    /* box-sizing: border-box; */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.heading {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* box-sizing: border-box; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+.container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+h1{
+  font-size: 50px;
+}
+button{
+  width: 130px;
+  margin-left: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+
+}
+label{
+  font-size: 17px;
+}
+input{
+  height: 20px;
+  width: 200px;
+}
+.weather-data {
+  color: antiquewhite;
+  font-size: 15px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgb(3, 3, 3);
+}
+.weather-data h2{
+  color: black;
+  text-shadow: 2px 2px 4px rgb(131, 130, 130);
+}
+#error{
+  color: red;
+}
+
+@media (max-width: 600px) {
+    .main {
+      width: 60%;
+      margin-top: 20px;
+    }
+    h1{
+      font-size: 19px;
+    }
+    label{
+      font-size: 14px;
+    }
+    input{
+      height: 12px;
+      width: 165px;
+      font-size: 8px;
+    }
+    button{
+      width: 60px;
+      margin-left: 55px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-size: 8px;
+      background-color: aliceblue;
+    
+    }
+    #error{
+      font-size: 10px;
+      color: red;
+    }
+    .weather-data{
+      font-size: 8px;
+    }
+
+  }
+
+  @media (min-width: 601px) and (max-width: 768px) {
+    .main {
+      width: 60%;
+      margin-top: 20px;
+    }
+    .message{
+      width: 30px;
+      height: 20px;
+    }
+    #error{
+      font-size: 14px;
+      color: red;
+    }
+    .weather-data{
+      font-size: 10px;
+    }
+  }
